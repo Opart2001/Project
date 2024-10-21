@@ -1,0 +1,129 @@
+/* Profile.css */
+
+.container-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin-top: -100px;
+}
+
+.profile-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 160px;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.profile-heading {
+    font-weight: bold;
+}
+
+.edit-button,
+.add-button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: #5c5c5c;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+.modal-dialog {
+    max-width: 400px;
+}
+
+.redfont {
+    font-size: 15px;
+    /* ปรับขนาดฟอนต์ให้เล็กลง */
+    color: #fd0404;
+    /* กำหนดสีเป็นสีแดง */
+}
+
+.dropdown-checkbox {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.checkbox-container label {
+    margin-right: 10px;
+    /* เพิ่มระยะห่างระหว่าง Label และ Checkbox */
+    flex-grow: 1;
+    /* ให้ Label ขยายเพื่อเติมเต็มพื้นที่ */
+    text-align: left;
+    /* ให้ข้อความอยู่ทางซ้าย */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-left: 10px;
+    /* เพิ่มระยะห่างระหว่าง Checkbox และข้อความ */
+}
+
+.dropdown-checkbox {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.checkbox-container label {
+    margin-right: 10px;
+    /* เพิ่มระยะห่างระหว่าง Label และ Checkbox */
+    flex-grow: 1;
+    /* ให้ Label ขยายเพื่อเติมเต็มพื้นที่ */
+    text-align: left;
+    /* ให้ข้อความอยู่ทางซ้าย */
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-left: 10px;
+    /* เพิ่มระยะห่างระหว่าง Checkbox และข้อความ */
+}
+.profile-card {
+    border: 1px solid #ddd; /* เพิ่มกรอบให้แต่ละโปรไฟล์ */
+    padding: 15px; /* เพิ่ม padding ภายในการ์ด */
+    border-radius: 5px; /* เพิ่มความโค้งมนให้กับกรอบ */
+    margin-bottom: 15px; /* เพิ่มระยะห่างระหว่างการ์ดแต่ละอัน */
+    background-color: #fefefe; /* พื้นหลังสีขาวเพื่อให้ดูชัด */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อย */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ทำให้เอฟเฟกต์ตอบสนองเมื่อ hover */
+}
+
+.profile-card:hover {
+    transform: translateY(-5px); /* ขยับการ์ดขึ้นเมื่อเอาเมาส์ไปชี้ */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ hover */
+}

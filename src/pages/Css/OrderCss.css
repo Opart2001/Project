@@ -1,0 +1,68 @@
+.title {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.toggle-button {
+    width: 40px;
+    height: 34px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-size: 20px; /* Adjust font size as needed */
+}
+
+.order-item {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.order-details {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-pending {
+    color: red;
+}
+
+.status-sending {
+    color: green;
+}
+
+
+
+.detail {
+    margin-top: 10px;
+    width: 100%;
+    
+    padding: 20px; /* Add padding for content */
+    border-radius: 8px;
+    background-color: #fff; /* White background for content */
+    box-shadow: none; /* Remove shadow if needed */
+}
+
+.product-order-image {
+    width: 300px; /* ขนาดกว้างของรูปภาพ */
+    height: auto; /* ให้ความสูงเป็นอัตโนมัติ เพื่อรักษาอัตราส่วน */
+    margin-bottom: 10px; /* ระยะห่างด้านล่างรูปภาพ */
+    border: 1px solid #ddd; /* ขอบของรูปภาพ */
+    border-radius: 5px; /* มุมมนของรูปภาพ */
+}

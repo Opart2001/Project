@@ -1,0 +1,51 @@
+/* AdminCss.css */
+.admin-container {
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: auto; /* เพื่อให้สามารถเลื่อนซ้ายขวาได้หากเนื้อหาเกินหน้าจอ */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+/* สำหรับปุ่มยืนยันการเปลี่ยนแปลง */
+.btn-primary {
+    background-color: #178f33; /* สีเขียว */
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* มุมมน */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* เงา */
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* สีเขียวเข้มเมื่อวางเมาส์ */
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}

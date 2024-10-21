@@ -1,0 +1,50 @@
+.admin-container {
+    padding: 20px; 
+    margin: auto;
+}
+
+.ingredient-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.ingredient-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.ingredient-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.ingredient-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.ingredient-form button:hover {
+    background-color: #45a049;
+}
+
+.ingredient-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ingredient-table th, .ingredient-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.ingredient-table th {
+    background-color: #f2f2f2;
+}

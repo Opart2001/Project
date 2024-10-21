@@ -1,0 +1,89 @@
+.name-title {
+    display: flex;
+    font-size: 200px;
+    font-weight: bold;
+    color: #ffffff;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+
+.rec-title {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+/* RecommendCss.css */
+
+.rec-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: #ffffff;
+    /* สีพื้นหลังเป็นสีขาว */
+    padding: 20px;
+    /* เพิ่ม padding เพื่อให้มีพื้นที่รอบๆ ขอบของกล่อง */
+    border-radius: 20px;
+    /* ทำให้มุมของกล่องโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* เพิ่มเงาให้กับกล่อง */
+}
+
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: visible;
+    background-color: #fff;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่ม transition */
+}
+
+/* เอฟเฟกต์เมื่อเอาเมาส์ไปชี้ */
+.card:hover {
+    transform: translateY(-10px); /* ยกการ์ดขึ้น */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เพิ่มเงาให้มากขึ้น */
+}
+
+/* เอฟเฟกต์เมื่อกด */
+.card:active {
+    transform: translateY(0); /* ลดการ์ดลงมาในตำแหน่งเดิม */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ลดเงาลง */
+}
+
+
+
+
+.card-body {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+}
+
+.red-text {
+    color: red;
+}
+
+
+.recommend-circle {
+    position: absolute;
+    top: -20px;
+    right: 300px;
+    width: 10px;
+    height: 100px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}

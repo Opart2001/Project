@@ -1,0 +1,9 @@
+.home-background {
+    background-image: url('../../assets/BGDS6.png');
+    background-size: cover; /* ปรับขนาดภาพให้พอดีกับพื้นที่ */
+    background-position: center; /* จัดตำแหน่งภาพพื้นหลังให้ตรงกลาง */
+    background-repeat: no-repeat; /* ป้องกันการซ้ำของภาพพื้นหลัง */
+    min-height: 100vh; /* ทำให้พื้นหลังครอบคลุมความสูงของหน้าจอทั้งหมด */
+    padding: 20px; /* เพิ่มการเว้นระยะ */
+    background-attachment: fixed; /* ทำให้พื้นหลังขยับตามการเลื่อน */
+}

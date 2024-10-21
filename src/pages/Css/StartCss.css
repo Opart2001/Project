@@ -1,0 +1,54 @@
+.button-group {
+    gap: 10px; /* Adjust the gap between buttons as needed */
+}
+
+.btn-custom {
+    background-color: rgb(0, 0, 0);
+    color: #f4c734;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-custom:hover {
+    background-color: #0f0f0f; /* Slightly darker yellow on hover */
+    color: ;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.base-background {
+    background-color: #070b13;
+}
+
+.titleMao {
+    font-weight: bold;
+    color: #000000;
+    text-shadow: 3px 1px 0px #f4c734; /* เพิ่มเงาสีเหลือง */
+}
+
+
+.btn-yellow {
+    background-color: #000000 !important; 
+    border-color:  #f4c734!important; 
+    color: black; 
+}
+
+.btn-outline-yellow {
+    background-color: transparent !important; 
+    border-color: #000000!important; 
+    color: #000000; 
+}
+

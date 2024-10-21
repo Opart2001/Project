@@ -1,0 +1,108 @@
+.admin-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.confirm {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* AdminCss.css */
+
+/* Dropdown container */
+.dropdown-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Dropdown toggle button */
+.dropdown-toggle-ingredient {
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu-ingredient {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+}
+
+.dropdown-menu-ingredient.show {
+    display: block;
+}
+
+/* Dropdown items */
+.dropdown-item-ingredient {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.dropdown-item-ingredient:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item-ingredient input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.dropdown-item-ingredient label {
+    margin: 0;
+    font-size: 14px;
+}
+
+.text-green {
+    color: green; /* สีเขียวสำหรับข้อความ Show */
+}
+
+.text-red {
+    color: red; /* สีแดงสำหรับข้อความ Hidden */
+}
+

@@ -1,0 +1,31 @@
+.dropdown-item-ingredient {
+    display: flex;                       /* ใช้ flexbox สำหรับการจัดเรียง */
+    justify-content: space-between;      /* จัดระเบียบให้มีพื้นที่ระหว่างชื่อและปุ่มติ๊ก */
+    align-items: center;                 /* จัดแนวแนวตั้งให้อยู่กลาง */
+    padding: 8px 12px;                  /* เพิ่ม padding ให้สวยงาม */
+    border-bottom: 1px solid #ddd;       /* เส้นแบ่งระหว่างรายการ */
+}
+
+.dropdown-item-ingredient:last-child {
+    border-bottom: none;                 /* ไม่มีเส้นแบ่งสำหรับรายการสุดท้าย */
+}
+
+.dropdown-item-ingredient label {
+    margin-right: auto;                  /* ให้ margin-right เป็น auto เพื่อให้ label อยู่ทางซ้าย */
+    cursor: pointer;                     /* เปลี่ยน cursor เป็น pointer */
+    flex: 1;                             /* ให้ label ใช้พื้นที่ที่เหลือ */
+}
+
+/* จัดให้ checkbox อยู่ทางขวาและกำหนดขนาดให้เท่ากัน */
+.dropdown-item-ingredient input[type="checkbox"] {
+    width: 20px;                         /* กำหนดความกว้างให้กับ checkbox */
+    height: 20px;                        /* กำหนดความสูงให้กับ checkbox */
+    cursor: pointer;                     /* เปลี่ยน cursor เป็น pointer */
+}
+
+.form-group input[type="checkbox"] {
+    width: 20px;                         /* กำหนดความกว้างให้กับ checkbox */
+    height: 20px;                        /* กำหนดความสูงให้กับ checkbox */
+    margin-right: 10px;                  /* เพิ่มระยะห่างด้านขวาเพื่อไม่ให้ติดกับข้อความ */
+    cursor: pointer;                     /* เปลี่ยน cursor เป็น pointer */
+}

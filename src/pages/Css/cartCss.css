@@ -1,0 +1,102 @@
+.cart-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Center-align text */
+}
+
+.empty-cart-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust as necessary to vertically center the message */
+    font-size: 1.5em;
+    color: #555;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: left; /* Align table text to the left */
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+}
+
+.cart-table td {
+    background-color: #fff;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cart-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.remove-button, .confirm-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
+
+.confirm-button {
+    background-color: #28a745;
+}
+
+.confirm-button:hover {
+    background-color: #218838;
+}
+/* cartCss.css */
+
+.productCart-image {
+    width: 100px; /* ปรับขนาดตามที่ต้องการ */
+    height: 100px; /* ปรับขนาดตามที่ต้องการ */
+    object-fit: cover; /* ให้รูปภาพพอดีกับขนาดที่กำหนดโดยไม่เสียอัตราส่วน */
+}
+
+.empty-cart-message {
+    display: flex; /* ใช้ Flexbox */
+    flex-direction: column; 
+    justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    height: 100vh; /* ตั้งความสูงให้เต็มหน้าจอ */
+    text-align: center; /* ทำให้ข้อความอยู่กลาง */
+}
+
+.empty-cart-message img {
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่างรูปภาพกับข้อความ */
+}
+
+.cart-text{
+    color: #000;
+    font-size: 50px;
+}

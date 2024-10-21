@@ -1,0 +1,56 @@
+.dropdown-menu {
+    max-height: 300px;                 /* กำหนดความสูงสูงสุด */
+    overflow-y: auto;                  /* เปิดใช้งานการเลื่อนแนวตั้ง */
+    border: 1px solid #ddd;            /* เพิ่มเส้นขอบให้ dropdown */
+    padding: 8px;                      /* เพิ่ม padding รอบๆ */
+    width: 100%;                       /* กำหนดความกว้างเต็ม */
+}
+
+.dropdown-item {
+    display: flex;                     /* ใช้ flexbox สำหรับการจัดเรียง */
+    justify-content: space-between;    /* จัดระเบียบให้มีพื้นที่ระหว่างชื่อและปุ่มติ๊ก */
+    align-items: center;               /* จัดแนวแนวตั้งให้อยู่กลาง */
+    padding: 8px 12px;                 /* เพิ่ม padding ให้สวยงาม */
+    border-bottom: 1px solid #ddd;     /* เส้นแบ่งระหว่างรายการ */
+    width: 100%;                       /* กำหนดความกว้างให้เต็มที่ */
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;               /* ไม่มีเส้นแบ่งสำหรับรายการสุดท้าย */
+}
+
+.dropdown-item input[type="checkbox"] {
+    margin-left: auto;                 /* ให้ margin-left เป็น auto เพื่อจัดให้ปุ่มติ๊กอยู่ทางขวา */
+}
+
+.dropdown-item span {
+    flex: 1;                           /* ให้ span ใช้พื้นที่ที่เหลือ */
+    min-width: 150px;                  /* กำหนดความกว้างขั้นต่ำ */
+    text-align: left;                  /* จัดตำแหน่งข้อความไปทางซ้าย */
+}
+
+.c-dropdown-toggle {
+    background-color: #858585;          /* พื้นหลังสีน้ำเงิน */
+    color: rgb(0, 0, 0);                       /* สีตัวอักษรเป็นสีขาว */
+    border: none;                       /* ไม่มีขอบ */
+    padding: 10px 20px;                 /* เพิ่ม padding ให้ปุ่ม */
+    font-size: 16px;                    /* ขนาดฟอนต์ */
+    border-radius: 5px;                 /* ขอบโค้งมน */
+    cursor: pointer;                    /* เปลี่ยน cursor เป็นรูปมือเมื่อ hover */
+    display: inline-block;              /* จัดให้ปุ่มอยู่ในบรรทัดเดียวกับองค์ประกอบอื่น */
+    transition: background-color 0.3s ease; /* เพิ่มการเปลี่ยนสีแบบลื่น */
+}
+
+.edit-dropdown-toggle:hover {
+    background-color: #ffffff;          /* เปลี่ยนเป็นสีน้ำเงินเข้มเมื่อ hover */
+}
+
+.edit-dropdown-toggle:focus {
+    outline: none;                      /* เอาเส้นขอบเมื่อถูก focus ออก */
+    box-shadow: 0 0 0 2px rgba(219, 219, 219, 0.5); /* เพิ่มเงาสีฟ้าเมื่อถูก focus */
+}
+
+.edit-dropdown-toggle:active {
+    background-color: #000000;          /* สีน้ำเงินเข้มขึ้นเมื่อกดปุ่ม */
+    box-shadow: none;                   /* ไม่มีเงาเมื่อกดปุ่ม */
+}

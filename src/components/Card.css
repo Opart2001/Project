@@ -1,0 +1,57 @@
+/* Card.css */
+.bold {
+    font-weight: bold;
+}
+
+.button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    height: 50px;
+    /* ปรับมุมของปุ่ม */
+    padding: 5px 10px;
+    /* ปรับขนาดของปุ่ม */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+        background-color: rgb(37, 37, 37);
+    }
+
+    /* สำหรับการกด (active) */
+    &:active {
+        background-color: rgb(58, 58, 58);
+    }
+}
+
+
+
+.quantity-controls {
+    display: flex;
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวดิ่ง */
+}
+
+
+
+
+
+.err-pic {
+    width: 700px;
+    height: 700px;
+}
+
+.err-message {
+    font-weight: bold;
+    margin-top: 20px; /* เพิ่มช่องว่างด้านบนข้อความ */
+    text-align: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+}
+
+.mt-2 {
+    margin-top: 16px; /* ตัวอย่างการตั้ง margin-top */
+}
+
+.red-text{
+    color: #ff0000;
+}
+

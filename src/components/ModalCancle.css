@@ -1,0 +1,27 @@
+.modal-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-button.cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+.modal-button.cancel:hover {
+    background-color: #c82333;
+}
+
+.modal-button.cancel:active {
+    background-color: #bd2130;
+}
+
+.modal-button.cancel:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.5);
+}
