@@ -95,7 +95,7 @@ function AdminEdit() {
 
         if (result.isConfirmed) {
             try {
-                let updatedQuantityInStock = editingProduct.quantityInStock;
+                const updatedQuantityInStock = editingProduct.quantityInStock;
 
                 if (editingProduct.newQuantityInStock) {
                     updatedQuantityInStock = parseInt(editingProduct.quantityInStock, 10) + parseInt(editingProduct.newQuantityInStock, 10);
@@ -132,7 +132,6 @@ function AdminEdit() {
         }
     };
 
-
     const handleSearchChange = (e) => {
         setSearchTerm(e.target.value);
     };
@@ -157,6 +156,11 @@ function AdminEdit() {
             document.removeEventListener('mousedown', handleOutsideClick);
         };
     }, [dropdownOpen]);
+
+    const totalQuantityInStock = editingProduct 
+        ? (parseInt(editingProduct.quantityInStock, 10) || 0) + 
+          (parseInt(editingProduct.newQuantityInStock, 10) || 0)
+        : 0;
 
     return (
         <>
@@ -195,14 +199,13 @@ function AdminEdit() {
                             ))}
 
                             <div className="form-group">
-                                <label>Add Quantity</label>
+                                <label>Quantity</label>
                                 <input
                                     type="number"
                                     name="newQuantityInStock"
-                                    value={editingProduct.newQuantityInStock || ''}
+                                    value={totalQuantityInStock}
                                     onChange={handleInputChange}
-                                    className="form-control"
-                                    placeholder="Enter quantity to add"
+                                    min="0" // ป้องกันการกรอกตัวเลขติดลบ
                                 />
                                 <label>Ingredients</label>
                                 <div className="dropdown-container">
@@ -225,7 +228,6 @@ function AdminEdit() {
                                             ))
                                         )}
                                     </div>
-
                                 </div>
                             </div>
                             <button type="submit" className="confirm btn-primary">Save Changes</button>
@@ -254,7 +256,6 @@ function AdminEdit() {
                                     <th>Price</th>
                                     <th>Status</th>
                                     <th>Actions</th>
-
                                 </tr>
                             </thead>
                             <tbody>
