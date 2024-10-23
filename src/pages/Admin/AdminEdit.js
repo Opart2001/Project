@@ -95,24 +95,19 @@ function AdminEdit() {
 
         if (result.isConfirmed) {
             try {
-                const updatedQuantityInStock = editingProduct.quantityInStock;
-
-                if (editingProduct.newQuantityInStock) {
-                    updatedQuantityInStock = parseInt(editingProduct.quantityInStock, 10) + parseInt(editingProduct.newQuantityInStock, 10);
-                }
-
                 const updatedProduct = {
-                    ...editingProduct,
-                    quantityInStock: updatedQuantityInStock,
-                    // isVisible จะถูกอัปเดตจาก checkbox
+                    name: editingProduct.name,
+                    description: editingProduct.description,
+                    type: editingProduct.type,
+                    location: editingProduct.location,
+                    size: editingProduct.size,
+                    quantityInStock: editingProduct.quantityInStock,
+                    price: editingProduct.price,
+                    imageUrl: editingProduct.imageUrl,
+                    isVisible: editingProduct.isVisible
                 };
 
                 await axios.put(`${config.api_path}/products/update/${editingProduct.id}`, updatedProduct);
-
-                await axios.put(`${config.api_path}/product-ingredients`, {
-                    productId: editingProduct.id,
-                    ingredients: selectedIngredients
-                });
 
                 Swal.fire({
                     title: 'Success',
@@ -131,6 +126,7 @@ function AdminEdit() {
             }
         }
     };
+
 
     const handleSearchChange = (e) => {
         setSearchTerm(e.target.value);
@@ -157,10 +153,7 @@ function AdminEdit() {
         };
     }, [dropdownOpen]);
 
-    const totalQuantityInStock = editingProduct 
-        ? (parseInt(editingProduct.quantityInStock, 10) || 0) + 
-          (parseInt(editingProduct.newQuantityInStock, 10) || 0)
-        : 0;
+
 
     return (
         <>
@@ -199,14 +192,14 @@ function AdminEdit() {
                             ))}
 
                             <div className="form-group">
-                                <label>Quantity</label>
+                                <label>Add Quantity</label>
                                 <input
                                     type="number"
-                                    name="newQuantityInStock"
-                                    value={totalQuantityInStock}
+                                    name="quantityInStock"
+                                    value={editingProduct.quantityInStock}
                                     onChange={handleInputChange}
-                                    min="0" // ป้องกันการกรอกตัวเลขติดลบ
                                 />
+
                                 <label>Ingredients</label>
                                 <div className="dropdown-container">
                                     <button type="button" className="edit-dropdown-toggle" onClick={handleDropdownToggle}>

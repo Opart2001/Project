@@ -108,10 +108,11 @@ function Details() {
 
     const calculateTotalPrice = () => {
         if (selectedPackage) {
-            return selectedQuantity * selectedPackage.price;
+            return (selectedQuantity * selectedPackage.price).toFixed(2);
         }
-        return 0;
+        return (0).toFixed(2); // คืนค่าเป็นทศนิยม 2 ตำแหน่งเช่นกัน
     };
+    
 
     const handleAddToCart = () => {
         addToCart(selectedPackage, selectedQuantity);
